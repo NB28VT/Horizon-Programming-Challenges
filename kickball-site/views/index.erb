@@ -1,0 +1,42 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>Kickballz League</title>
+  <link href = "app.css" media = "screen" rel="stylesheet"/>
+</head>
+
+
+<body>
+
+  <div class= "banner">
+    <h1>Kickballz Kickball League Teams</h1>
+  </div>
+
+  <div class = "picture">
+    <img src="madden-kick.jpg" alt="madden kick">
+  </div>
+
+
+  <div class = "teams" >
+    <h2>League Teams</h2>
+    <ul>
+      <% @teams.each do |team| %>
+        <li><a href ="/<%= team %>"><%= team %></a></li>
+        <% end %>
+    </ul>
+
+  </div>
+
+
+  <div class = "positions">
+    <h2>Positions</h2>
+      <ul>
+        <% @positions.each do |position| %>
+          <li><a href ="/positions/<%= position %>"><%= position %></li>
+        <% end %>
+
+      </ul>
+  </div>
+</body>
+
+</html>

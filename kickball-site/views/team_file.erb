@@ -1,0 +1,27 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>Kickballz League</title>
+  <link href = "app.css" media = "screen" rel="stylesheet"/>
+</head>
+
+
+<body>
+  <h1>Kickballz Kickball League</h1>
+  <h2><%= @team %></h2>
+    <% @roster.each do |name, position| %>
+      <h3><%= name %>:     <%= position %></h3>
+    <% end %>
+
+  <h4><a href= "/">Home</h4>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

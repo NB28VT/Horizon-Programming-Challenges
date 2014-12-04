@@ -1,0 +1,12 @@
+body {
+  background: tomato;
+}
+
+.banner {
+  background: blue;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
